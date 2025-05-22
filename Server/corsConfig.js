@@ -11,7 +11,7 @@
 const corsOptions = {
     origin: (origin, callback) => {
         const allowedOrigins = [
-            'http://localhost:5000/',  // Local development URL
+            'http://localhost:5000',  // Local development URL
             'https://emmzy1212.github.io' // Your production frontend URL
         ];// Add your frontend origin(s) here
         if (!origin || allowedOrigins.includes(origin)) {
