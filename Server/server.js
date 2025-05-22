@@ -3,16 +3,20 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import contactRoutes from "./routes/contactRoutes.js";
-import corsOptions from './corsConfig.js'; // Import the CORS configuration
+import corsOptions from './corsConfig.js';
 
 dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+
+app.use(cors(corsOptions)); // If you have a custom config
 app.use(express.json());
 
-app.use(cors(corsOptions)); // Apply the CORS middleware
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
 
 app.use("/api", contactRoutes);
 
