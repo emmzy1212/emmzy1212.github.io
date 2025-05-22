@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from zyan.vercel.app/blog_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Apr 2024 22:52:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi"
+    />
+    <title>Afeez Personal Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/scroll_button.css" />
+    <link rel="stylesheet" href="css/plugin.css" />
+    <link rel="stylesheet" href="css/spacing.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <body>
+    <!--================================
+        PRELOADER START
+    =================================-->
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+      <h5 class="preloader-text">Loading</h5>
+    </div>
+    <!--================================
+        PRELOADER END
+    =================================-->
+    <!--================================
+        MENU START
+    =================================-->
+    <nav class="navbar navbar-expand-lg main_menu">
+      <div class="container main_menu_bg">
+        <a class="navbar-brand" href="index-2.html">
+          <img src="images/logo333-removebg-preview.png" alt="" class="img-fluid w-100" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-sharp fa-regular fa-bars bar_icon"></i>
+          <i class="fa-regular fa-xmark close_icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link text_hover_animaiton" href="index.html"
+                >Home <i class="far fa-angle-down"></i
+              ></a>
+              <ul class="droap_menu">
+                <!-- <li><a href="index-2.html">Home 1</a></li>
+                <li><a href="index_2.html">Home 2</a></li>
+                <li><a href="index_3.html">Home 3</a></li> -->
+                <!-- <li><a href="index_4.html">Home 4</a></li> -->
+                <!-- <li><a href="index_rtl.html">Home RTL</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text_hover_animaiton" href="#about"
+                >about us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text_hover_animaiton" href="#service"
+                >services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text_hover_animaiton" href="#">Projects </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text_hover_animaiton active" href="blog_details.html"
+                >blog <i class="far fa-angle-down"></i
+              ></a>
+              <ul class="droap_menu">
+                <li>
+                  <!-- <a href="blog_list.html">Blog List</a> -->
+                </li>
+                <!-- <li><a href="blog_details.html">Blog Details</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text_hover_animaiton" href="contact.html"
+                >contact
+              </a>
+            </li>
+          </ul>
+          <span
+            class="toggle_icon c-pointer"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+            ><i
+              class="fa-sharp fa-sharp fa-regular fa-bars bar_icon-staggered"
+            ></i
+          ></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+      <div class="offcanvas-header">
+        <a class="offcanvas-logo" href="index_2.html">
+          <img src="images/logo333-removebg-preview.png" alt="ZAYAN" class="img-fluid w-100" />
+        </a>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fa-regular fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="tf__design_form offcanvas_form">
+          <div class="offcanvas-content-box">
+            <h4 class="offcanvas_title">About us</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+              tempor incididunt ut labore et magna aliqua. Ut enim ad minim
+              veniam laboris.
+            </p>
+          </div>
+          <div class="offcanvas_contact_form">
+            <h4 class="offcanvas_title">Get In Touch</h4>
+            <form action="#">
+              <input
+                type="text"
+                placeholder="Your Name"
+                aria-autocomplete="list"
+              />
+              <input type="email" placeholder="Your Email" />
+              <textarea rows="4" placeholder="Message"></textarea>
+              <button type="submit" class="common_btn">submit now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================================
+        MENU END
+    =================================-->
+
+    <!--================================
+        BREADCRUMB START
+    =================================-->
+    <section
+      class="tf__breadcrumb banner"
+      style="background: url(images/bg/breadcrumb.jpg)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tf__breadcrum_text">
+              <h1>Blog Details</h1>
+              <ul class="page-breadcrumb">
+                <li>
+                  <a href="index-2.html" class="text_hover_animaiton">Home</a>
+                </li>
+                <li><a href="#">Blog Details</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================================
+        BREADCRUMB END
+    =================================-->
+
+    <!--================================
+        BLOG DETAILS START
+    =================================-->
+    <section class="tf__blog_details pt_120 xs_pt_80 pb_120 xs_pb_80">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 col-lg-8">
+            <div class="tf__blog_details_area">
+              <div class="tf__blog_details_img">
+                <img
+                  src="images/blog/thumbnail.jpg"
+                  alt="blog"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <ul class="blog_details_header">
+                <li>By Emmzy</li>
+                <li><span style="background-color: blanchedalmond;">Standard </span></li>
+              </ul>
+              <div class="tf__blog_details_text">
+                <h2 class="has-animation">The Role of HTML, CSS, and JavaScript in Frontend Development</h2>
+                <p>
+                  Frontend development relies heavily on three core technologies: HTML, CSS, and JavaScript. These technologies work together to create the visual and interactive aspects of websites and web applications.
+                </p>
+                <h3>HTML (HyperText Markup Language)</h3>
+                <p>
+                  HTML provides the structural foundation of web pages. It defines the content and layout of elements such as headings, paragraphs, lists, and images. HTML structures the information on a webpage and forms the basis for CSS styling and JavaScript interactions.
+                </p>
+                <h3>CSS (Cascading Style Sheets)</h3>
+                <p>
+                  CSS is responsible for styling the appearance of HTML elements. It enables frontend developers to define colors, fonts, spacing, layout, and other visual aspects of a webpage. CSS allows for consistent styling across multiple pages and ensures a cohesive user experience.
+                </p>
+                <h3>JavaScript</h3>
+                <p>
+                  JavaScript adds interactivity and dynamic behavior to web pages. It allows developers to create interactive features such as dropdown menus, form validation, animations, and real-time updates. JavaScript enhances user engagement and provides a more dynamic user experience.
+                </p>
+                <p>
+                  By mastering HTML, CSS, and JavaScript, frontend developers can create visually appealing, responsive, and interactive websites that meet the needs of modern users.
+                </p>
+                <!-- Add more content about the importance and usage of HTML, CSS, and JavaScript in frontend development -->
+              </div>
+              <div class="details_blog_share">
+                <h4>By Emmzy</h4>
+                <div class="share_icon">
+                  <ul class="social_share d-flex flex-wrap">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                  </ul>
+                  <ul class="tags d-flex flex-wrap">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <ul class="next_prev_button">
+                <li class="previous_post">
+                  <a href="#" data-cursor="Previous <br> post">
+                    <p>Previous post</p>
+                    <h5>Your New Cars Performance</h5>
+                  </a>
+                </li>
+                <li class="next_post">
+                  <a href="#" data-cursor="next <br> post">
+                    <p>Next post</p>
+                    <h5>Worth of Standard and Like</h5>
+                  </a>
+                </li>
+              </ul> -->
+              <div class="tf__details_bloger">
+                <h3>EMMZY</h3>
+                <span style="color: blanchedalmond;">April 2, 2024</span>
+                <p>
+                  It's important to understand the significance of HTML, CSS, and JavaScript in frontend development. HTML (HyperText Markup Language) provides the structure of a webpage, CSS (Cascading Style Sheets) defines its presentation, and JavaScript adds interactivity and dynamic behavior. These technologies are essential for creating user-friendly and visually appealing websites and applications.
+                </p>
+                <p>
+                  HTML acts as the skeleton of a webpage, organizing its content into a logical structure. CSS then styles this content, controlling its appearance and layout. JavaScript, on the other hand, enhances user experience by enabling interactive features such as animations, form validation, and dynamic content updates.
+                </p>
+                <p>
+                  By mastering HTML, CSS, and JavaScript, frontend developers can create engaging and responsive web experiences that meet the needs of modern users.
+                </p>
+                <a href="#">Reply</a>
+                <div class="img">
+                  <!-- <img
+                    src="images/testimonial/1.jpg"
+                    alt="bloger"
+                    class="img-fluid w-100"
+                  /> -->
+                </div>
+              </div>
+              
+              <div class="tf__input_comment mt_90">
+                <h2 class="has-animation">Leave a comment</h2>
+                <form action="#">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <input style="border-color: blanchedalmond;" type="text" placeholder="Your Name" />
+                    </div>
+                    <div class="col-xl-6">
+                      <input style="border-color: blanchedalmond;" type="text" placeholder="Your Email" />
+                    </div>
+                    <div class="col-xl-12">
+                      <textarea style="border-color: blanchedalmond;"
+                        rows="6"
+                        placeholder="Write your Message here"
+                      ></textarea>
+                      <button style="background-color: blanchedalmond;" class="common_btn" type="submit">
+                        Post comment now
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="tf__sidebar">
+              <div class="tf__sidebar_item tf__sidebar_search">
+                <h3>Search</h3>
+                <form action="#">
+                  <input type="text" placeholder="Search your blog" />
+                  <button type="submit">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="tf__sidebar_item tf__sidebar_category mt_30">
+                <h3>Category</h3>
+                <ul>
+                  <li>
+                    <a href="blog_details.html"
+                      >HTML <span>(02)</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog_details.html">CSS<span>(05)</span></a>
+                  </li>
+                  <li>
+                    <a href="blog_details.html"
+                      >JAVASCRIPT <span>(10)</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog_details.html"
+                      >GIT <span>(03)</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog_details.html">MUSIC PROMOTION <span>(10)</span></a>
+                  </li>
+                  <li>
+                    <a href="blog_details.html"
+                      >website-design <span>(03)</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="tf__sidebar_item tf__sidebar_comments mt_30">
+                <h3>Comments</h3>
+                <ul>
+                  <li>
+                    <div class="img">
+                      <img
+                        src="images/blog/comment_1.jpg"
+                        alt="comment"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="text">
+                      <a href="blog_details.html"
+                        >Aliquam Eros Justo Posuere Loborti Per</a
+                      >
+                      <p>By Arham saklia</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img
+                        src="images/blog/comment_2.jpg"
+                        alt="comment"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="text">
+                      <a href="blog_details.html"
+                        >Aliquam Eros Justo Posuere Loborti Per</a
+                      >
+                      <p>By Arham saklia</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img
+                        src="images/blog/comment_3.jpg"
+                        alt="comment"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="text">
+                      <a href="blog_details.html"
+                        >Aliquam Eros Justo Posuere Loborti Per</a
+                      >
+                      <p>By Arham saklia</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div -->
+                <!-- class="tf__sidebar_item tf__sidebar_gallery mt_30 gallery_popup"
+              >
+                 -->
+              <div class="tf__sidebar_item tf__sidebar_tags mt_30">
+                <h3>Tags</h3>
+                <ul>
+                  <li>
+                    <a href="#">Web design</a>
+                  </li>
+                  <li>
+                    <a href="#">Frontend</a>
+                  </li>
+                  <li>
+                    <a href="#">Html</a>
+                  </li>
+                  <li>
+                    <a href="#">css</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                  <li>
+                    <a href="#">Git</a>
+                  </li>
+                  <li>
+                    <!-- <a href="#">Start shape</a> -->
+                  </li>
+                  <li>
+                    <!-- <a href="#">UI/UX</a> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================================
+        BLOG DETAILS END
+    =================================-->
+
+    <!--================================
+        SUBSCRIBE START
+    =================================-->
+
+    <div class="tf__subscribe" style="background: url(images/bg/subscribe.jpg)">
+      <div class="tf__subscribe_overlay pt_115 xs_pt_75 pb_120 xs_pb_80">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-8 col-md-10 m-auto">
+              <div class="tf__subscribe_text">
+                <h3 class="has-animation">SUBSCRIBE MY NEWSLETTER</h3>
+                <form action="#" class=""> 
+                  <input type="text" placeholder="Enter Your Email" style="border-color: blanchedalmond;" />
+                  <button style="background-color: blanchedalmond; border-color: blanchedalmond;" type="submit" class="common_btn">Notify Now</button>
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================================
+SUBSCRIBE END
+=================================-->
+
+    <!--================================
+        FOOTER START
+    =================================-->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="pt_120 xs_pt_80 sm_pt_80">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div
+                  class="tf__footer_content fade_right"
+                  data-trigerId="footer"
+                  data-stagger=".25"
+                >
+                  <div class="icon" style="background-color: rgb(215, 166, 93);">
+                    <div class="icon-contianer" >
+                      <i class="bi bi-house-add-fill fs-1"></i>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h3>Address</h3>
+                    <p>Lagos Island. Lagos state, Nigeria</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="tf__footer_content fade_right"
+                  data-trigerId="footer"
+                  data-stagger=".25"
+                >
+                  <div class="icon" style="background-color: rgb(215, 166, 93);">
+                    <div class="icon-contianer" >
+                      <i class="bi bi-telephone-outbound-fill fs-1"></i>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h3>Lets talk us</h3>
+                    <a href="callto:1234567890">(234) 6386-1035</a>
+                    <!-- <a href="callto:1234567890">(603) 555-0123</a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="tf__footer_content fade_right"
+                  data-trigerId="footer"
+                  data-stagger=".25"
+                >
+                  <div class="icon" style="background-color: rgb(215, 166, 93);">
+                    <div class="icon-contianer" >
+                      <i class="bi bi-envelope-at-fill fs-1"></i>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h3>Send us email</h3>
+                    <a href="mailto:example@gmail.com">Emmzy1212@yahoo.com</a>
+                    <!-- <a href="mailto:example@gmail.com">curtis@example.com</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            <div class="row">
+              <div class="col-12">
+                <div class="tf__footer_copyright">
+                  <p>© Emmzy 2023 | All Rights Reserved</p>
+                  <ul>
+                    <li>
+                      <a href="#" class="text_hover_animaiton"
+                        >Terms & Condition</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text_hover_animaiton"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text_hover_animaiton">Sitemap</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--================================
+  FOOTER END
+=================================-->
+    <!--================================
+        SCROLL BUTTON START
+    =================================-->
+    <div class="progress active c-pointer">
+      <svg
+        class="progress-svg"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      </svg>
+    </div>
+    <!--================================
+        SCROLL BUTTON END
+    =================================-->
+
+    <!--================================
+        CURSOR START
+    =================================-->
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!--================================
+        CURSOR END
+    =================================-->
+
+    <script src="js/plugin.js"></script>
+    <!--scroll button js-->
+    <script src="js/scroll_button.js"></script>
+    <!--sticky sidebar js-->
+    <script src="js/sticky_sidebar.js"></script>
+    <!-- Animation -->
+    <script src="js/animation.js"></script>
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+  </body>
+
+<!-- Mirrored from zyan.vercel.app/index_4.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Apr 2024 22:52:15 GMT -->
+</html>
